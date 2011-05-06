@@ -60,7 +60,7 @@ dependency in your leiningen project:
 
     :dependencies [[s3-edge "1.0.0"]]
 
-It accept an option map which respects the following keys:
+It accepts an option map which respects the following keys:
 
 - *:bucket-name* name of the bucket to check for objects. Defaults to
    the system property specified by <code>PARAM1</code>
@@ -72,7 +72,7 @@ It accept an option map which respects the following keys:
 
 ## Further Notes
 
-- s3-edge does it's best to pass along appropriate headers. Basically,
+- s3-edge does its best to pass along appropriate headers. Basically,
   if it's available in the s3 client library API it's passed through.
 - File streams opened from s3 are passed directly into the
   response. This may do things like consume lots of memory if you're
